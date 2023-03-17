@@ -130,11 +130,11 @@ blockquote > #opsL{text-align:right;font-size:12px;font-weight:400;line-height:0
   totalPesan = 5; //Input total pesan (slide) di sini ya!
 
   function waktumuncul(){
-	  setTimeout(kalimatakhir,900); //1
-      setTimeout(kalimatakhir,10100); //2
-      setTimeout(kalimatakhir,8250); //3
-      setTimeout(kalimatakhir,10000); //4
-      setTimeout(kalimatakhir,12700); //5
+	  setTimeout(kalimatakhir,300); //1
+      setTimeout(kalimatakhir,3100); //2
+      setTimeout(kalimatakhir,5250); //3
+      setTimeout(kalimatakhir,7000); //4
+      setTimeout(kalimatakhir,9700); //5
   }
   
   audio.addEventListener('progress', function() {
@@ -204,7 +204,7 @@ document.getElementById("bq").onclick = function() {
   function kalimatakhir(){
       kalimat.innerHTML="";
   	new TypeIt("#kalimat", {
-      strings: ["" + pesanAkhir1], startDelay: 10, speed: 35, cursor: true,
+      strings: ["" + pesanAkhir1], startDelay: 10, speed: 1, cursor: true,
       afterComplete: function(){
          kalimat.innerHTML = pesanAkhir1;
          iden += 1;
@@ -221,7 +221,7 @@ document.getElementById("bq").onclick = function() {
   bodyblur.style.opacity=".15";
   pesanAkhir.style="position:relative;opacity:1;visibility:visible;transform: scale(1)";
   new TypeIt("#pesanAkhir", {
-  strings: ["" + pesanAkhir3], startDelay: 100, speed: 50, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
+  strings: ["" + pesanAkhir3], startDelay: 100, speed: 1, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
   	 pesanAkhir.style.animation="rto .8s infinite alternate";
       //setTimeout(tombol,700);
