@@ -204,7 +204,7 @@ document.getElementById("bq").onclick = function() {
   function kalimatakhir(){
       kalimat.innerHTML="";
   	new TypeIt("#kalimat", {
-      strings: ["" + pesanAkhir1], startDelay: 10, speed: 1, cursor: true,
+      strings: ["" + pesanAkhir1], startDelay: 10, speed: 100, cursor: true,
       afterComplete: function(){
          kalimat.innerHTML = pesanAkhir1;
          iden += 1;
@@ -221,7 +221,7 @@ document.getElementById("bq").onclick = function() {
   bodyblur.style.opacity=".15";
   pesanAkhir.style="position:relative;opacity:1;visibility:visible;transform: scale(1)";
   new TypeIt("#pesanAkhir", {
-  strings: ["" + pesanAkhir3], startDelay: 100, speed: 1, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
+  strings: ["" + pesanAkhir3], startDelay: 100, speed: 100, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
   	 pesanAkhir.style.animation="rto .8s infinite alternate";
       //setTimeout(tombol,700);
